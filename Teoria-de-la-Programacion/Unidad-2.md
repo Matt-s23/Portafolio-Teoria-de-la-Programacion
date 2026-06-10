@@ -294,21 +294,8 @@ Desarrollar un programa que solicite cinco notas de un estudiante, calcule el pr
 
 ## 3.2 Análisis del Problema
 
-### Entradas
+<img width="1727" height="159" alt="image" src="https://github.com/user-attachments/assets/6264aa0a-9e4b-4013-b212-2bd467d29ea4" />
 
-- Cinco calificaciones ingresadas por el usuario.
-
-### Procesos
-
-- Leer las cinco notas.
-- Acumular las calificaciones.
-- Calcular el promedio.
-- Evaluar la condición de aprobación.
-
-### Salidas
-
-- Promedio final.
-- Estado del estudiante.
 
 ---
 
@@ -403,29 +390,9 @@ int main() {
 
 **Resultado Esperado**
 
-```txt
-Promedio final: 8.40
-Estado: APROBADO
+<img width="1196" height="739" alt="image" src="https://github.com/user-attachments/assets/768a8f18-99cd-4541-90c4-f170e6e7ea11" />
+
 ```
-
-### Caso 2
-
-**Datos de Entrada**
-
-- 4
-- 5
-- 3
-- 6
-- 4
-
-**Resultado Esperado**
-
-```txt
-Promedio final: 4.40
-Estado: REPROBADO
-```
-
----
 
 # 4. Principales Dificultades y Reflexión Crítica
 
