@@ -4,16 +4,35 @@
 
 # 📚 Contenido de la Unidad
 
-- [Estructuras condicionales](#1-estructuras-condicionales)
-- [Estructuras repetitivas](#2-estructuras-repetitivas)
-- [Ejercicio con estructura condicional y repetitiva](#3-ejercicio-con-estructura-condicional-y-repetitiva)
-- [Principales dificultades y reflexión crítica](#4-principales-dificultades-y-reflexión-crítica)
+- [1. Estructuras Condicionales](#1-estructuras-condicionales)
+  - [Tipos de estructuras condicionales](#-tipos-de-estructuras-condicionales)
+  - [Condicional simple](#-condicional-simple-if)
+  - [Condicional doble](#-condicional-doble-if---else)
+  - [Condicional múltiple](#-condicional-múltiple-if---else-if)
+  - [Estructura en diagrama de flujo](#-estructura-en-diagrama-de-flujo)
+
+- [2. Estructuras Repetitivas](#2-estructuras-repetitivas)
+  - [Tipos de estructuras repetitivas](#-tipos-de-estructuras-repetitivas)
+  - [Ciclo while](#-ciclo-while)
+  - [Ciclo do while](#-ciclo-do-while)
+  - [Ciclo for](#-ciclo-for)
+
+- [3. Ejercicio con estructura condicional y repetitiva](#3-ejercicio-con-estructura-condicional-y-repetitiva)
+  - [Planteamiento del problema](#-planteamiento-del-problema)
+  - [Análisis del problema](#-análisis-del-problema)
+  - [Diseño del algoritmo](#-diseño-del-algoritmo-diagrama-de-flujo)
+  - [Codificación](#-codificación-código-fuente)
+  - [Validación](#-validación-prueba-de-escritorio)
+
+- [4. Principales dificultades y reflexión crítica](#4-principales-dificultades-y-reflexión-crítica)
+
+- [🔗 Navegación](#-navegación)
 
 ---
 
 # 1. Estructuras Condicionales
 
-Las estructuras condicionales permiten que un programa tome decisiones dependiendo de si una condición es verdadera o falsa.
+Las estructuras condicionales permiten que un programa tome decisiones dependiendo de si una condición es verdadera o falsa. Estas estructuras son fundamentales dentro de la programación, ya que permiten controlar el flujo de ejecución de un algoritmo y adaptar el comportamiento del programa según determinadas situaciones.
 
 ---
 
@@ -21,7 +40,7 @@ Las estructuras condicionales permiten que un programa tome decisiones dependien
 
 ### ✅ Condicional simple (`if`)
 
-Ejecuta una acción únicamente si la condición se cumple.
+La estructura `if` ejecuta un bloque de instrucciones únicamente cuando la condición establecida es verdadera.
 
 ### 📌 Pseudocódigo
 
@@ -35,13 +54,13 @@ INICIO
   FIN_SI
 
 FIN
-```
+````
 
 ---
 
 ### ✅ Condicional doble (`if - else`)
 
-Permite ejecutar una acción si la condición es verdadera y otra diferente si es falsa.
+La estructura `if - else` permite ejecutar una acción cuando la condición es verdadera y otra distinta cuando la condición es falsa.
 
 ### 📌 Pseudocódigo
 
@@ -63,7 +82,7 @@ FIN
 
 ### ✅ Condicional múltiple (`if - else if`)
 
-Evalúa varias condiciones consecutivas.
+Esta estructura se utiliza cuando existen varias condiciones posibles dentro de un mismo problema.
 
 ### 📌 Pseudocódigo
 
@@ -123,7 +142,7 @@ FIN
 
 # 2. Estructuras Repetitivas
 
-Las estructuras repetitivas permiten ejecutar instrucciones varias veces mientras se cumpla una condición.
+Las estructuras repetitivas permiten ejecutar un conjunto de instrucciones varias veces mientras se cumpla una condición determinada. Estas estructuras ayudan a automatizar procesos y evitar la repetición innecesaria de código.
 
 ---
 
@@ -131,7 +150,7 @@ Las estructuras repetitivas permiten ejecutar instrucciones varias veces mientra
 
 ### ✅ Ciclo `while`
 
-Evalúa primero la condición.
+El ciclo `while` evalúa primero la condición y posteriormente ejecuta las instrucciones mientras dicha condición sea verdadera.
 
 ### 📌 Pseudocódigo
 
@@ -155,7 +174,7 @@ FIN
 
 ### ✅ Ciclo `do while`
 
-Ejecuta al menos una vez el bloque de instrucciones.
+La estructura `do while` ejecuta primero el bloque de instrucciones y luego evalúa la condición, garantizando al menos una ejecución.
 
 ### 📌 Pseudocódigo
 
@@ -176,7 +195,7 @@ FIN
 
 ### ✅ Ciclo `for`
 
-Se usa cuando se conoce el número de repeticiones.
+La estructura `for` se utiliza cuando se conoce previamente la cantidad de veces que se repetirá una instrucción.
 
 ### 📌 Pseudocódigo
 
@@ -239,28 +258,29 @@ FIN
 
 # 3. Ejercicio con estructura condicional y repetitiva
 
----
-
 ## 🔹 Planteamiento del problema
 
-Desarrollar un programa que solicite 5 notas de un estudiante, calcule el promedio y determine si el estudiante aprueba o reprueba.
+Desarrollar un programa que solicite cinco notas de un estudiante, calcule el promedio general y determine si el estudiante aprueba o reprueba la asignatura.
 
 ---
 
 ## 🔹 Análisis del problema
 
 ### 📥 Entradas
-- 5 calificaciones
+
+* Cinco calificaciones.
 
 ### ⚙ Procesos
-- Leer notas
-- Sumar notas
-- Calcular promedio
-- Evaluar condición
+
+* Leer las notas.
+* Sumar las calificaciones.
+* Calcular el promedio.
+* Evaluar la condición de aprobación.
 
 ### 📤 Salidas
-- Promedio final
-- Estado del estudiante
+
+* Promedio final.
+* Estado del estudiante.
 
 ---
 
@@ -330,14 +350,15 @@ int main() {
 
 ## 🔹 Validación (prueba de escritorio)
 
-### ✅ Caso 1
+### Caso 1
 
 Notas:
-- 8
-- 9
-- 7
-- 10
-- 8
+
+* 8
+* 9
+* 7
+* 10
+* 8
 
 Resultado:
 
@@ -348,14 +369,15 @@ Estado: APROBADO
 
 ---
 
-### ✅ Caso 2
+### Caso 2
 
 Notas:
-- 4
-- 5
-- 3
-- 6
-- 4
+
+* 4
+* 5
+* 3
+* 6
+* 4
 
 Resultado:
 
@@ -368,22 +390,21 @@ Estado: REPROBADO
 
 # 4. Principales dificultades y reflexión crítica
 
-## 🔹 Principales dificultades
+## Reflexión
 
-- Comprender la lógica de los ciclos repetitivos.
-- Diferenciar correctamente operadores de comparación.
-- Organizar diagramas de flujo complejos.
-- Entender el uso correcto de variables acumuladoras.
+El desarrollo de esta unidad me permitió comprender que la programación no consiste únicamente en escribir código, sino en aprender a resolver problemas mediante un razonamiento lógico y estructurado. Durante el estudio de las estructuras condicionales y repetitivas entendí cómo un programa puede tomar decisiones y repetir procesos automáticamente dependiendo de ciertas condiciones establecidas.
+
+Una de las mayores dificultades que tuve fue comprender el funcionamiento de los ciclos `for` y `while`, ya que al inicio resultaban confusos debido a la manera en que controlan las repeticiones dentro de un programa. En algunos ejercicios se me dificultaba identificar cuándo debía utilizar cada estructura y cómo funcionaban las variables contadoras y acumuladoras dentro del ciclo. También tuve problemas al elaborar diagramas de flujo relacionados con estructuras repetitivas, porque era necesario organizar correctamente la secuencia lógica del proceso para evitar errores.
+
+Sin embargo, mediante la práctica constante, las pruebas de escritorio y la corrección de errores en los programas, logré entender mejor el comportamiento de las estructuras repetitivas y su importancia dentro de la programación. Poco a poco fui desarrollando una mejor capacidad de análisis para identificar errores lógicos y mejorar la organización de los algoritmos.
 
 ---
 
-## 🔹 Reflexión crítica
+## Conclusión
 
-El estudio de estructuras condicionales y repetitivas permitió comprender cómo los programas toman decisiones y automatizan tareas.
+En conclusión, esta unidad fortaleció significativamente mi comprensión sobre las estructuras condicionales y repetitivas, las cuales representan una base fundamental en el desarrollo de programas. Aprendí que las estructuras condicionales permiten que un sistema tome decisiones dependiendo de determinadas situaciones, mientras que las estructuras repetitivas ayudan a automatizar tareas que deben ejecutarse varias veces.
 
-Además, el desarrollo de ejercicios prácticos ayudó a fortalecer la lógica de programación y la capacidad de análisis para resolver problemas computacionales.
-
-Las pruebas de escritorio facilitaron detectar errores antes de ejecutar el código, mejorando el razonamiento lógico y la comprensión del funcionamiento interno de los algoritmos.
+Además, comprendí la importancia de realizar pruebas de escritorio antes de ejecutar un programa, ya que este proceso facilita la detección de errores y mejora la lógica del algoritmo. El uso de pseudocódigo, diagramas de flujo y lenguaje C permitió relacionar la teoría con la práctica, fortaleciendo mi pensamiento lógico-computacional y mi capacidad para resolver problemas mediante programación.
 
 ---
 
@@ -391,10 +412,12 @@ Las pruebas de escritorio facilitaron detectar errores antes de ejecutar el cód
 
 [⬅ Volver a la Portada](Portada.md)
 
-| Navegación |
-|---|
-
-[📘 Unidad 1](Unidad-1.md)
-[📘 Unidad 3](Unidad-3.md)
+| Navegación                 |
+| -------------------------- |
+| [📘 Unidad 1](Unidad-1.md) |
+| [📘 Unidad 3](Unidad-3.md) |
 
 ---
+
+```
+```
