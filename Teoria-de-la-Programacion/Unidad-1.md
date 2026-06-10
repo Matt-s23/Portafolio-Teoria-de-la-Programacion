@@ -1,4 +1,4 @@
-```md
+
 ---
 [⬅ Volver a la Portada](Portada.md)
 
