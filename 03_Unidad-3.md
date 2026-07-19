@@ -27,8 +27,9 @@
 
 ## 1. Programación Modular
 
-<img width="530" height="260" alt="image" src="https://github.com/user-attachments/assets/7946530e-2438-4bfa-8405-8c0a041e1955" />
-
+<p align="center">
+ <img width="530" height="260" alt="image" src="https://github.com/user-attachments/assets/365e6da2-cabb-479f-94d0-418c7004ae66" />
+</p>
 
 <div style="text-align: justify;">
 
@@ -54,6 +55,10 @@ Esta forma de organizar el código trae varias ventajas prácticas:
 ---
 
 ### 1.2 Paso de Parámetros por Valor
+
+<p align="center">
+<img width="320" height="240" alt="image" src="https://github.com/user-attachments/assets/1e896dec-469e-4a1e-b6e9-21d0d69b25c6" />
+</p>
 
 En el paso por valor, la función recibe **una copia** del dato original. Cualquier modificación que se haga dentro de la función afecta solo a esa copia; la variable original, en el programa que hizo el llamado, permanece sin cambios una vez que la función termina.
 
@@ -157,6 +162,10 @@ Aquí, `stockActual` sí queda modificado después de llamar a la función, porq
 
 ## 2. Arreglos (Estructuras de Datos Estáticas)
 
+<p align="center">
+<img width="408" height="207" alt="image" src="https://github.com/user-attachments/assets/49cd7499-0879-4ae3-bd87-ce862a6b2d58" />
+</p>
+
 <div style="text-align: justify;">
 
 ### 2.1 Concepto General
@@ -188,6 +197,10 @@ Este arreglo podría representar las temperaturas registradas durante los siete 
 
 ### 2.3 Arreglo Bidimensional
 
+<p align="center">
+<img width="797" height="385" alt="image" src="https://github.com/user-attachments/assets/614350f3-8f74-4dd5-9083-2f8113519e10" />
+</p>
+
 El arreglo bidimensional organiza la información en filas y columnas, como una tabla. Resulta natural para representar datos que tienen dos dimensiones, por ejemplo, la distribución de asientos en un autobús o un cine.
 
 ```text
@@ -214,6 +227,10 @@ Aquí `asientos[fila][columna]` indica si un asiento específico está libre (1)
 ---
 
 ### 2.4 Arreglo Multidimensional
+
+<p align="center">
+<img width="618" height="420" alt="image" src="https://github.com/user-attachments/assets/d13b7647-0a56-4f48-8804-30da5c3b7387" />
+</p>
 
 Cuando la información requiere más de dos dimensiones, se utilizan arreglos multidimensionales. Son comunes en aplicaciones como el procesamiento de imágenes a color, videojuegos o el control de inventario distribuido en varias bodegas y estantes.
 
@@ -291,10 +308,9 @@ FIN
 ### 3.4 Diagrama de Flujo
 
 <p align="center">
-<img src="diagrama-flujo-temperaturas.svg" alt="Diagrama de flujo del ejercicio integrador de temperaturas" width="600">
+<img width="808" height="550" alt="image" src="https://github.com/user-attachments/assets/9f1434c7-72d9-4963-b7ef-884093f7c048" />
 </p>
 
-> Sube el archivo `diagrama-flujo-temperaturas.svg` a la misma carpeta de tu repositorio donde está este archivo `.md` para que la imagen se muestre correctamente en GitHub.
 
 ### 3.5 Codificación
 
@@ -368,8 +384,6 @@ Durante el desarrollo de esta unidad se presentaron varias dificultades relacion
 - Comprender el funcionamiento de los punteros en el paso por referencia me tomó más tiempo que el resto de la unidad, especialmente entender la diferencia entre modificar la dirección de memoria y modificar el valor almacenado en esa dirección.
 - Al trabajar con arreglos bidimensionales, tuve confusión inicial entre el índice de fila y el de columna al recorrer la matriz con ciclos anidados, lo que provocaba que el programa mostrara datos en una posición distinta a la esperada.
 - Visualizar el funcionamiento de un arreglo multidimensional fue lo más abstracto de la unidad, ya que a diferencia del vector o la matriz, no es tan sencillo representarlo gráficamente en papel.
-
-> **Lección aprendida:** dedicar tiempo a hacer una prueba de escritorio antes de codificar, incluso en ejercicios que parecen sencillos, ayuda a detectar este tipo de errores de índices y de paso de parámetros antes de que aparezcan como errores de ejecución.
 
 </div>
 
