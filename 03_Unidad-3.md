@@ -104,15 +104,17 @@ int main() {
 }
 ```
 
+#### Ejecución del programa
+
+<p align="center">
+<img width="681" height="105" alt="image" src="https://github.com/user-attachments/assets/2edaf07f-24d9-40f5-92fa-724dd71b3042" />
+</p>
+
 Al ejecutar este programa, dentro de `aplicarDescuento` el precio se muestra ya rebajado, pero en `main()` la variable `precioOriginal` conserva su valor de 100, porque la función trabajó únicamente con una copia.
 
 ---
 
 ### 1.3 Paso de Parámetros por Referencia
-
-<p align="center">
-<!-- PEGAR AQUÍ UNA IMAGEN QUE MUESTRE EL PASO DE PARÁMETROS POR REFERENCIA O EL USO DE PUNTEROS -->
-</p>
 
 En el paso por referencia, en lugar de enviar una copia del dato, se envía la **dirección de memoria** de la variable mediante un puntero. Esto permite que la función acceda directamente a la variable original y la modifique, de modo que los cambios sí se conservan al terminar la función.
 
@@ -156,7 +158,14 @@ int main() {
 }
 ```
 
+#### Ejecución del programa
+
+<p align="center">
+<img width="690" height="107" alt="image" src="https://github.com/user-attachments/assets/c4b57196-bff8-4520-812e-5b28c5b9d2c2" />
+
+
 Aquí, `stockActual` sí queda modificado después de llamar a la función, porque `aumentarStock` no trabajó con una copia sino con la dirección de memoria real de la variable, a través del puntero `cantidad`.
+</p>
 
 </div>
 
@@ -177,10 +186,6 @@ Un arreglo es una estructura que permite almacenar varios valores del mismo tipo
 ---
 
 ### 2.2 Arreglo Unidimensional
-
-<p align="center">
-<!-- PEGAR AQUÍ UNA IMAGEN DE UN ARREGLO O VECTOR UNIDIMENSIONAL -->
-</p>
 
 El arreglo unidimensional, o vector, organiza los datos en una sola fila, accesible mediante un único índice. Es útil para representar listas simples, como una serie de mediciones tomadas a lo largo de varios días.
 
@@ -374,7 +379,9 @@ Promedio semanal: 22.14 — Clasificación: Semana templada
 **Compilación y ejecución**
 
 <p align="center">
-<!-- PEGAR AQUÍ LA CAPTURA DE LA COMPILACIÓN Y EJECUCIÓN DEL PROGRAMA -->
+<img width="613" height="237" alt="image" src="https://github.com/user-attachments/assets/510021ae-0e8a-43b7-b724-c6bf8c3ce6cf" />
+</p>
+
 </p>
 
 </div>
@@ -401,11 +408,7 @@ Durante el desarrollo de esta unidad se presentaron varias dificultades relacion
 
 <div style="text-align: justify;">
 
-Esta unidad me permitió entender que la programación modular no es solo una buena práctica, sino una necesidad real conforme un programa crece: dividir el problema de las temperaturas semanales en tres funciones separadas (leer, calcular promedio y clasificar) hizo que cada parte del código fuera mucho más fácil de revisar y corregir que si todo estuviera junto dentro de `main()`.
-
-El concepto que más trabajo me costó asimilar fue el paso de parámetros por referencia. Al principio memoricé la sintaxis de los punteros sin entender del todo por qué era necesaria, pero al comparar el ejemplo de paso por valor (donde la variable original no cambiaba) con el de paso por referencia (donde sí cambiaba), pude notar la diferencia de forma más clara. Esto también me ayudó a entender por qué en C los arreglos se comportan como si siempre se pasaran por referencia: al modificar el arreglo dentro de una función, el cambio se refleja en todo el programa sin necesidad de retornarlo explícitamente.
-
-Trabajar con arreglos unidimensionales, bidimensionales y multidimensionales me hizo ver cómo un mismo concepto —guardar varios datos bajo un solo nombre— se adapta a distintos niveles de complejidad según el problema: una lista simple de temperaturas, una tabla de asientos, o un inventario clasificado por bodega y estante. Considero que esta unidad sienta una base importante para asignaturas futuras donde estas estructuras de datos, junto con la organización modular del código, serán herramientas constantes.
+Esta unidad me permitió comprender la importancia de organizar un programa mediante funciones independientes y utilizar arreglos para administrar conjuntos de datos de manera eficiente. Al desarrollar el ejercicio integrador entendí que dividir el problema en funciones para leer las temperaturas, calcular el promedio y clasificar la semana hace que el código sea más claro, reutilizable y sencillo de mantener. Aunque al principio tuve dificultades para comprender el paso de parámetros por referencia y el uso de punteros, comparar su funcionamiento con el paso por valor me ayudó a entender cómo se modifican directamente las variables originales y por qué los arreglos pueden trabajarse entre distintas funciones. Además, el estudio de arreglos unidimensionales, bidimensionales y multidimensionales me permitió reconocer cómo una misma estructura puede adaptarse a diferentes problemas según la cantidad de información que se necesite representar. Considero que esta unidad fortaleció mi lógica de programación y me brindó herramientas fundamentales que seguiré utilizando en asignaturas más avanzadas de la carrera.
 
 </div>
 
@@ -423,4 +426,3 @@ Trabajar con arreglos unidimensionales, bidimensionales y multidimensionales me 
 | [📚 Bibliografía](05_Bibliografia.md) |
 | [🤖 Declaración de uso de la IA](06_Declaración-de-uso-de-la-IA.md) |
 
----
